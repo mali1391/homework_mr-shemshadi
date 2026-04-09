@@ -1,9 +1,3 @@
-
-#
-# x = list(map(lambda x: x * 2, list1))
-#
-# print(x)
-i = 0
 list1 = [15685, 986, 7471, 8856]
 for item in list1:
     odd = lambda x: item % 2
