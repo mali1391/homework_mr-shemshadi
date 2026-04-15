@@ -1,17 +1,17 @@
 temperatures = list()
 temperature = int(input("Enter temperature: "))
 
-c = lambda cel : (temperature - 32) / 1.8
+centigrade = lambda centigrade_unit : (temperature - 32) / 1.8
 
-f = str((temperature - 32) / 1.8)
-f += " f"
+fahrenheit = str((temperature - 32) / 1.8)
+fahrenheit += " fahrenheit"
 
 
-result = list(map(c, temperatures))
-result.append(f)
-celc = str(temperature)
-celc += " c"
-result.insert(0, celc)
+result = list(map(centigrade, temperatures))
+result.append(fahrenheit)
+temperature_with_unit = str(temperature)
+temperature_with_unit += " centigrade"
+result.insert(0, temperature_with_unit)
 
 
 print(result)
