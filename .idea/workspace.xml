@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e20035a-d6ad-4429-b9c9-1469ac892a72" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/python_projects/func_exerscise.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_projects/func_exerscise.py" afterDir="false" />
-    </list>
+    <list default="true" id="6e20035a-d6ad-4429-b9c9-1469ac892a72" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +12,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "git-widget-placeholder": "develop"
+    "git-widget-placeholder": "funcs__exercise"
   }
 }]]></component>
   <component name="TaskManager">
