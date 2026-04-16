@@ -8,5 +8,3 @@ if len(list1) == len(list2):
         lists.append(analogous[i])
         lists.append(analog2[i])
         print(lists)
-else:
-    pass
