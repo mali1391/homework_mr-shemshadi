@@ -14,7 +14,7 @@ class Vehicle:
             massage = f"Status of passenger_vehicle: {self.passenger_vehicle}"
             return massage
 
-class Train:
+class Train(Vehicle):
 
     def __init__(self, inner_city_vehicle, passenger_vehicle, ticket_price, stations):
         Vehicle.__init__(self, inner_city_vehicle, passenger_vehicle)
@@ -27,7 +27,7 @@ class Train:
         message = base + f", ticket price: {self.ticket_price}, stations: {self.stations}"
         return message
 
-class Bus:
+class Bus(Train):
     def __init__(self, inner_city_vehicle, passenger_vehicle, ticket_price,traffic_time):
         Train.__init__(self, inner_city_vehicle, passenger_vehicle, ticket_price)
         self.traffic_time = traffic_time
@@ -38,8 +38,9 @@ class Bus:
         return message
 
 class Plane:
-    def __init__(self, inner_city_vehicle, passenger_vehicle, ticket_price):
+    def __init__(self, inner_city_vehicle, passenger_vehicle, ticket_price, terminal):
         Train.__init__(self, inner_city_vehicle, passenger_vehicle, ticket_price)
+        self.terminal = terminal
 
     def describe(self):
         base = Train.describe(self)
