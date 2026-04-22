@@ -38,8 +38,9 @@ class Bus(Train):
         return message
 
 class Plane:
-    def __init__(self, inner_city_vehicle, passenger_vehicle, ticket_price):
+    def __init__(self, inner_city_vehicle, passenger_vehicle, ticket_price, terminal):
         Train.__init__(self, inner_city_vehicle, passenger_vehicle, ticket_price)
+        self.terminal = terminal
 
     def describe(self):
         base = Train.describe(self)
