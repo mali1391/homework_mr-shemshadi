@@ -43,7 +43,7 @@ class Plane:
 
     def describe(self):
         base = Train.describe(self)
-        message = base + f", ticket price: {self.ticket_price}
+        message = base + f", ticket price: {self.ticket_price}"
         return message
 
 vehicle = input("Enter your vehicle:")
