@@ -1,4 +1,4 @@
-def check_word(word1 : str, word2 : str):
+def long_word(word1 : str, word2 : str):
     len_word1 = len(word1)
     len_word2 = len(word2)
 
