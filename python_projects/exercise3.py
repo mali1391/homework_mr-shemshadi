@@ -1,4 +1,4 @@
-def students_info(students: dict, fat_students: list, name: str, weight: int):
+def fat_students_in_school(students: dict, fat_students: list, name: str, weight: int):
     info = {name : weight}
     students.update(info)
 
