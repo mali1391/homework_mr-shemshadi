@@ -20,9 +20,8 @@ sort_of_fat_students_list = list()
 for i in range(2):
     student_name = input("Enter student name: ")
     student_weight = int(input("Enter student weight: "))
-
-    result = students_info(students_list, list_of_fat_students, student_name, student_weight)
-
+    result = fat_students_in_school(students_list, list_of_fat_students, student_name, student_weight)
+    
 print(f"This is the list of fats: {result}")
 
 result2 = sort_list(sort_of_fat_students_list)
