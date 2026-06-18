@@ -2,7 +2,7 @@ def hop_game(hop_number: int, number_of_numbers: int):
     for i in range(number_of_numbers*10):
         if (i+1)%number_of_numbers != 0 :
             print(i+1)
-        elif (i+1)%num == 0 :
+        elif (i+1)%number_of_numbers == 0 :
             continue
 
     return (f"This is the hop number: {hop_number}")
