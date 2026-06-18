@@ -1,5 +1,5 @@
-def fat_students_in_school(students: dict, fat_students: list, name: str, weight: int):
-    info = {name : weight}
+def fat_students_in_school(students: dict, fat_students: list, students_name: str, students_weight: int):
+    info = {students_name : students_weight}
     students.update(info)
     if weight > 70:
         fat_students.append(name)
