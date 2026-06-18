@@ -12,6 +12,6 @@ def long_word(word1 : str, word2 : str):
 name1 = input("enter first word: ")
 name2 = input("enter second word: ")
 
-result = check_word(name1, name2)
+result = long_word(name1, name2)
 
 print(result)
