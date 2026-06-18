@@ -1,9 +1,9 @@
 def fat_students_in_school(students: dict, fat_students: list, students_name: str, students_weight: int):
     info = {students_name : students_weight}
     students.update(info)
-    if weight > 70:
-        fat_students.append(name)
-    elif weight <= 70:
+    if students_weight > 70:
+        fat_students.append(students_name)
+    elif students_weight <= 70:
         print("This student isn't fat!")
 
     return fat_students
