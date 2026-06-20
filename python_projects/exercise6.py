@@ -1,32 +1,33 @@
-def calculate_mean(number : int, numbers : list, small_numbers : tuple):
-    numbers.append(number)
-    numbers.sort()
-    if numbers[i-1] <= numbers[i-2]:
-        smalls = numbers[i]
-        new_list = list(small_numbers)
-        new_list.append(smalls)
-        small_numbers= tuple(new_list)
-    elif numbers[i-1] >= numbers[i-2]:
-        smalls = numbers[i-2]
-        new_list = list(small_numbers)
-        new_list.append(smalls)
-        small_numbers= tuple(new_list)
-    return number, numbers, small_numbers
+def sort_list(number : int, numbers_list : list, small_numbers : tuple):
+    numbers_list.sort()
+    for item in numbers_list:
+        if item < number:
+            temp = list(small_numbers)
+            temp.append(item)
+            small_numbers = tuple(temp)
+    return small_numbers
 
-def check_tuple(nums_info : dict):
-    new_value = result3
-    if result3 in nums_info:
-        result3.count()
-    key = result3
-    new_item = {new_value : key}
-    nums_info.update(new_item)
-    return nums_info
-nums_tulpe = tuple()
-nums_list = []
-for i in range(3):
-    num = int(input("Enter your number:"))
-    result1, result2, result3 = calculate_mean(num, nums_list, nums_tulpe)
-print(result1 , result2)
+def check_tuple():
+    duplicate_numbers = dict()
+    for i in range(len(result)):
+        key = result[i]
+        if i == 0:
+            new_value = result.count(key)
+            new_item = {key : new_value}
+            duplicate_numbers.update(new_item)
+        elif i != 0:
+            if key == result[i-1]:
+                new_value = result.count(key)
+                new_item = {key : new_value}
+                duplicate_numbers.update(new_item)
+            if key != result[i-1]:
+                new_value = result.count(key)
+                new_item = {key : new_value}
+                duplicate_numbers.update(new_item)
+    print(duplicate_numbers)
 
-result4 = check_tuple({})
-print(result4)
+list_of_numbers = [5, 5, 64, 65, 65, 885]
+small_numbers = tuple()
+number = int(input("Enter your number: "))
+result = sort_list(number, list_of_numbers, small_numbers)
+result2 = check_tuple()
