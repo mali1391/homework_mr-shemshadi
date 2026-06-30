@@ -1,5 +1,5 @@
 def hop_game(hop_number: int, number_of_numbers: int):
-    for i in range(number_of_numbers*10):
+    for i in range(hop_number*10):
         if (i+1)%number_of_numbers != 0 :
             print(i+1)
         elif (i+1)%number_of_numbers == 0 :
@@ -7,8 +7,8 @@ def hop_game(hop_number: int, number_of_numbers: int):
 
     return (f"This is the hop number: {hop_number}")
 
-num1 = int(input("Enter the hop number: "))
-num2 = int(input("Enter a number: "))
+hop_number = int(input("Enter the hop number: "))
+number_of_numbers = int(input("Enter numebr of numbers: "))
 
-result = hop_game(num1, num2)
+result = hop_game(hop_number, number_of_numbers)
 print(result)

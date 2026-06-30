@@ -1,12 +1,11 @@
-total = 0
-def average_func(numbers : list, total):
-
+def average_func(numbers : list):
+    total = 0
     for num in numbers:
         total += num
     average = total/len(numbers)
-    return average
+    return average, total
 
 list_of_numbers = [5, 6, 7]
-result = average_func(list_of_numbers, total)
-print(result)
+result = average_func(list_of_numbers)
 
+print(result)
