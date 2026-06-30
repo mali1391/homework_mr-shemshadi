@@ -1,5 +1,5 @@
-def average_func(numbers : list):
-    total = 0
+total = 0
+def average_func(numbers : list, total):
     for num in numbers:
         total += num
     average = total/len(numbers)
